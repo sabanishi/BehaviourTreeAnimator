@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce717d51a273b46c6b69ca33003b6196, type: 3}
+  m_Name: dat_blackboard_player_animator
+  m_EditorClassIdentifier: 
+  properties:
+  - propertyName: IsGround
+    propertyType: 3
+    integerValue: 0
+    floatValue: 0
+    stringValue: 
+    booleanValue: 0
+  - propertyName: IsAir
+    propertyType: 3
+    integerValue: 0
+    floatValue: 0
+    stringValue: 
+    booleanValue: 1
+  - propertyName: XSpeed
+    propertyType: 1
+    integerValue: 0
+    floatValue: 0
+    stringValue: 
+    booleanValue: 0
+  - propertyName: YSpeed
+    propertyType: 1
+    integerValue: 0
+    floatValue: 0
+    stringValue: 
+    booleanValue: 0

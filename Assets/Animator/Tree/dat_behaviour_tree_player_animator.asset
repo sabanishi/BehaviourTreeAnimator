@@ -1,0 +1,290 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8538958460399546948
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf826d515ee4ecbb5374772bbd3fe4e, type: 3}
+  m_Name: AnimatorNode
+  m_EditorClassIdentifier: 
+  guid: 032d91d35df54473ba9cabf9e01ea802
+  position: {x: -242, y: 518}
+  title: WaitAnimation
+  subRoutine: {fileID: 0}
+  animationName: WaitAnimation
+--- !u!114 &-5700869587833134069
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf826d515ee4ecbb5374772bbd3fe4e, type: 3}
+  m_Name: AnimatorNode
+  m_EditorClassIdentifier: 
+  guid: ed5bb77eabbb54dcf926fe2bc7369fff
+  position: {x: -31, y: 450.5}
+  title: WalkAnimation
+  subRoutine: {fileID: 0}
+  animationName: WalkAnimation
+--- !u!114 &-5353047882458075479
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8d18bf1db1334f2d8023426a7851c74, type: 3}
+  m_Name: IfNode
+  m_EditorClassIdentifier: 
+  guid: a64977260d9ed4735ba43c5a869c09b3
+  position: {x: 165.69499, y: 424.00003}
+  title: IsYSpeedGreater0
+  child: {fileID: 1668735116858667607}
+  conditions:
+    conditions:
+    - {fileID: -2595274348727145250}
+--- !u!114 &-2872650400296505052
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7774819b8896c6439f456332d2df66f, type: 3}
+  m_Name: FloatCondition
+  m_EditorClassIdentifier: 
+  leftValue:
+    useProperty: 1
+    constValue: 0
+    propertyName: XSpeed
+  rightValue:
+    useProperty: 0
+    constValue: 0
+    propertyName: 
+  operatorType: 0
+--- !u!114 &-2847191083871914401
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8d18bf1db1334f2d8023426a7851c74, type: 3}
+  m_Name: IfNode
+  m_EditorClassIdentifier: 
+  guid: b231306e903ea40d582e72b95ea67025
+  position: {x: -135.50003, y: 253.55006}
+  title: IsGround
+  child: {fileID: -757760508297015220}
+  conditions:
+    conditions:
+    - {fileID: 4806032695966288543}
+--- !u!114 &-2595274348727145250
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7774819b8896c6439f456332d2df66f, type: 3}
+  m_Name: FloatCondition
+  m_EditorClassIdentifier: 
+  leftValue:
+    useProperty: 1
+    constValue: 0
+    propertyName: YSpeed
+  rightValue:
+    useProperty: 0
+    constValue: 0
+    propertyName: 
+  operatorType: 5
+--- !u!114 &-1610992191116227715
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8d18bf1db1334f2d8023426a7851c74, type: 3}
+  m_Name: IfNode
+  m_EditorClassIdentifier: 
+  guid: 7a2996d895b1647a2ab844d3d2eba269
+  position: {x: -242, y: 450.73502}
+  title: IsXSpeed0
+  child: {fileID: -8538958460399546948}
+  conditions:
+    conditions:
+    - {fileID: -2872650400296505052}
+--- !u!114 &-757760508297015220
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9063987a68c79c44d89f8f57869fd9d1, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  guid: ec446d3749dd044988d4a3bc71be55c4
+  position: {x: -135.50003, y: 321.00003}
+  title: 
+  children:
+  - {fileID: -1610992191116227715}
+  - {fileID: -5700869587833134069}
+  forceSuccess: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c4b5c83ab7686489f1b4fa4ca9532e, type: 3}
+  m_Name: dat_behaviour_tree_player_animator
+  m_EditorClassIdentifier: 
+  memo: 
+  rootNode: {fileID: 7197135555396560352}
+  nodes:
+  - {fileID: 7197135555396560352}
+  - {fileID: 5413850303285471244}
+  - {fileID: -2847191083871914401}
+  - {fileID: -757760508297015220}
+  - {fileID: -1610992191116227715}
+  - {fileID: -8538958460399546948}
+  - {fileID: -5700869587833134069}
+  - {fileID: 4606106249636776819}
+  - {fileID: -5353047882458075479}
+  - {fileID: 1668735116858667607}
+  - {fileID: 8684884190945020505}
+  blackboardAsset: {fileID: 11400000, guid: 4942f351689504edd813f4b16d6f79c3, type: 2}
+--- !u!114 &1668735116858667607
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf826d515ee4ecbb5374772bbd3fe4e, type: 3}
+  m_Name: AnimatorNode
+  m_EditorClassIdentifier: 
+  guid: 66173acbdb29c4cafb63a80524ff97f7
+  position: {x: 165.5, y: 491.5}
+  title: JumpAnimation
+  subRoutine: {fileID: 0}
+  animationName: JumpAnimation
+--- !u!114 &4606106249636776819
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9063987a68c79c44d89f8f57869fd9d1, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  guid: 09a5a4aff5b7e40f383d136264f8fe26
+  position: {x: 264.5, y: 253.5}
+  title: 
+  children:
+  - {fileID: -5353047882458075479}
+  - {fileID: 8684884190945020505}
+  forceSuccess: 0
+--- !u!114 &4806032695966288543
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d92910406f2c45dfb507fe9d0faba4f, type: 3}
+  m_Name: BooleanCondition
+  m_EditorClassIdentifier: 
+  leftValue:
+    useProperty: 1
+    constValue: 0
+    propertyName: IsGround
+  rightValue:
+    useProperty: 0
+    constValue: 1
+    propertyName: 
+  operatorType: 0
+--- !u!114 &5413850303285471244
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9063987a68c79c44d89f8f57869fd9d1, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  guid: d7d89d8cf892747f78886e62305d5a47
+  position: {x: 74.99996, y: 141.85002}
+  title: 
+  children:
+  - {fileID: -2847191083871914401}
+  - {fileID: 4606106249636776819}
+  forceSuccess: 0
+--- !u!114 &7197135555396560352
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f20ca020fcdcbff4cb6cf4a92eb703db, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  guid: 598fff41ad3134a85bbf478514e1bce0
+  position: {x: 75, y: 28.039993}
+  title: 
+  child: {fileID: 5413850303285471244}
+--- !u!114 &8684884190945020505
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf826d515ee4ecbb5374772bbd3fe4e, type: 3}
+  m_Name: AnimatorNode
+  m_EditorClassIdentifier: 
+  guid: 3069e30d317ca4ef291f3ab650a17827
+  position: {x: 395.5, y: 430}
+  title: FallJumpAnimation
+  subRoutine: {fileID: 0}
+  animationName: FallJumpAnimation
